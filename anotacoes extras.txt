@@ -1,0 +1,6 @@
+acessa index.php
+o index.php carrega: config > autoload > modules.config.php que possui os modulos, até carregar o módulo que você deseja
+o nosso modulo acessa: module > o diretorio do modulo > src > Module.php
+através do método getConfig do Module.php, ele abre: config > module.config.php que possui o registro do serviço do nosso controller, carrega nossa rota e nossa caminho da view
+através das rotas do module.config.php vamos para o controller, onde temos nossas actions que retornam uma view
+

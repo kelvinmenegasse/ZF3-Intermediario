@@ -38,3 +38,9 @@ echo $this->form()->openTag($form);
         ?>
 
     </div>
+
+<?php if ($messageError) : ?>
+<div class="alert alert-danger" role="alert">
+  Erro: <?=$messageError;?>
+</div>
+<?php endif;?>

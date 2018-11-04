@@ -14,7 +14,7 @@ $content->setAttribute('class', 'form-control')
 $submit = $form->get('submit'); 
 $submit->setAttribute('class', 'btn btn-primary');
 
-$form->setAttribute('action', $this->url('post', ['action' => 'add']));
+$form->setAttribute('action', $this->url('admin-blog/post', ['action' => 'add']));
 $form->prepare();
 
 
